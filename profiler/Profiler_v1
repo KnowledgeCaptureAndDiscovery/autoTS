@@ -1,0 +1,11 @@
+# Profile for Pyleoclim (autoTS)
+
+1. Evenly/unevenly spaced  - Done
+2. Trend
+Approach 1
+  - use HHT -> threshold. If variance is below x, not a Trend
+  - Pseudo-data with different trends and see when spectral methods would fail, set x at failure.
+  - Detect linear vs nonlinear
+Approach 2:
+Use wwz, and look at high vs low frequency power
+3. Gap detections
