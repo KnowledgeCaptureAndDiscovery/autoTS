@@ -168,22 +168,19 @@ def cost_function(res_psd,actual_freqs,dist_tol=0,peak_tol=0):
     if len(peaks) < len(actual_freqs):
         correct_num_peaks=False       
     widths=np.asarray(peak_widths(res_psd['psd'],peaks,rel_height=0.99)[0])
-    #only consider peaks clostest to actual freqs, need te do bipartite matching
-    #TODO assignment problem between peaks and actual_freqs
+    #only consider peaks clostest to actual freqs, need te do bipartite matching (using linear sum assignment func)
+    #assignment problem between peaks and actual_freqs
     #create cost matrix, rows=peaks, cols= actual_freq, cost= dist
     temp_combs=np.asarray(list(itertools.product(res_psd['freq'][peaks],actual_freqs)))
-    #create cost matrix given these combinations
     dist=lambda x,y:abs(x-y)
     cost=dist(temp_combs[:,0],temp_combs[:,1]).reshape(-1,len(actual_freqs)) #rows = peak, 
     row_ind,col_ind=linear_sum_assignment(cost)
-    dists=np.mean(cost[row_ind,col_ind],dtype=float)
-    #print(dists)#dists from closest assigned peaks
-    
+    dists=np.mean(cost[row_ind,col_ind],dtype=float)    
     peakidx=row_ind
     peak_heights=props['peak_heights'][peakidx]
     avg_height_width_ratio=mean([peak_height/widths[i] for i,peak_height in enumerate(peak_heights)])
 
-    #print(dists)
+    #dist tol is an accuracy tolerance for distance of peak to actual freq
     if dists<dist_tol:
         dists=0
     return (correct_num_peaks,dists,avg_height_width_ratio)
