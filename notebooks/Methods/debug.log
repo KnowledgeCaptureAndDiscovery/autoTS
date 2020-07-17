@@ -1,0 +1,3 @@
+2020-07-01 16:00:33,338 [DEBUG] shapely.geos: Trying `CDLL(/usr/lib/libc.dylib)`
+2020-07-01 16:00:33,339 [DEBUG] shapely.geos: Library path: '/usr/lib/libc.dylib'
+2020-07-01 16:00:33,339 [DEBUG] shapely.geos: DLL: <CDLL '/usr/lib/libc.dylib', handle 116eb4e80 at 0x12aad6970>
