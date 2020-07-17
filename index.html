@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>autoTS by KnowledgeCaptureAndDiscovery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">autoTS</h1>
+      <h2 class="project-tagline">Automated Machine Learning for Time Series Analysis</h2>
+      <a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS" class="btn">View on GitHub</a>
+      <a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="table-of-content" class="anchor" href="#table-of-content" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Table of content</h2>
+<ul>
+<li><a href="#what">What is autoTS?</a></li>
+<li><a href="#why">Why autoTS?</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a href="#disclaimer">Disclaimer</a></li>
+</ul>
+<h2>
+<a id="-what-is-autots" class="anchor" href="#-what-is-autots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="what"> What is autoTS?</a>
+</h2>
+<p>autoTS is an automated machine learning system for time series analysis. autoTS is conceived around three key ideas:</p>
+<ul>
+<li>To capture expert knowledge as semantic workflow templates that represent common multi-step analysis strategies and constraints,</li>
+<li>To automatically characterize datasets to extract properties that will affect the choice of analytic methods (e.g., the data has missing values) to instantiate those workflow templates,</li>
+<li>To curate a catalog of primitive pre-processing and analysis functions for time-series data that map to workflow steps and are annotated with preconditions (e.g., evenly-spaced time series is required), performance (e.g., bias in the low-frequency domain), and other constraints that will be used to generate solutions.</li>
+</ul>
+<h2>
+<a id="-why-autots" class="anchor" href="#-why-autots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="why"> Why autoTS?</a>
+</h2>
+<p>Time series analysis can be useful to investigate how a given variable (economic or otherwise) changes over time, to identify recurring patterns, new trends, and scaling behaviors. It can also be used to correlate two events in time and in forecasting by using information regarding historical values and associated patterns to predict future changes. Numerous methods have been developed in the past that require extensive expertise. These multi-step methods include not just machine learning algorithms but also data validation and cleaning (e.g. removal of missing values, long- term trend and/or natural log transformation), which are often performed manually and are an integral part of data science.</p>
+<p>Although many signal processing methodologies relevant to time series analysis are widely available in popular packages and libraries (eg, in Matlab , Python , and R ), there are important aspects that require sophisticated expertise:</p>
+<ul>
+<li>Identifying methods and set parameters that are appropriate for a given dataset.</li>
+<li>Preparing data for analysis.</li>
+<li>Specifying the null hypothesis.</li>
+</ul>
+<p>Consequently, time series analysis is often considered more of an art than a science, a craft that takes years to develop and master. Because few people possess the expertise to process time series data, we have limited capability to analyze from the all the time series data that have been collected. Because sophisticated expertise takes practice, few practitioners are well qualified to do time series data analysis properly.</p>
+<p>autoTS capture these strategies and methods and systematically searches through the space of solutions for a given dataset. A researcher with limited knowledge about time series analysis is able to use autoTS to efficiently generate valid solutions for their questions.</p>
+<h2>
+<a id="-resources-" class="anchor" href="#-resources-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="resources"> Resources </a>
+</h2>
+<h3>
+<a id="software" class="anchor" href="#software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software</h3>
+<p>autoTS relies on (and has extended) the <a href="https://www.wings-workflows.org">WINGS workflow system</a>.
+The methods are available through the <a href="https://github.com/LinkedEarth/Pyleoclim_util/tree/master">Pyleoclim package</a>.
+Workflow strategies and test datasets are available on our <a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS">GitHub repository</a>.</p>
+<h3>
+<a id="publications" class="anchor" href="#publications" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publications</h3>
+<p>Deborah Khider, Pratheek Athreya, Varun Ratnakar, Yolanda Gil, Feng Zhu,Myron Kwan, and Julien Emile-Geay. 2020. Towards Automating Time SeriesAnalysis for Paleogeosciences. InMileTS ’20: 6th KDD Workshop on Mining and Learning from Time Series, August 24th, 2020, San Diego, California, USA.ACM, New York, NY, USA, 6 pages. <a href="https://doi.org/10.1145/1122445.xxxxx1">https://doi.org/10.1145/1122445.xxxxx1</a> <a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS/blob/master/manuscripts/KDD_TimeSeries_Workshop.pdf">[PDF]</a></p>
+<h2>
+<a id="-contact-" class="anchor" href="#-contact-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="contact"> Contact </a>
+</h2>
+<p>For questions about autoTS, please contact <a href="mailto:khider@usc.edu">Deborah Khider</a> or <a href="mailto:gil@isi.edu">Yolanda Gil</a></p>
+<h2>
+<a id="-disclaimer-" class="anchor" href="#-disclaimer-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a name="disclaimer"> Disclaimer </a>
+</h2>
+<p>This research is funded by JP Morgan Chase &amp; Co. Any views or opinions expressed herein are solely those of the authors listed, and may differ from the views and opinions expressed by JP Morgan Chase &amp; Co. or its affilitates. This material is not a product of the Research Department of J.P. Morgan Securities LLC. This material should not be construed as an individual recommendation of for any particular client and is not intended as a recommendation of particular securities, financial instruments or strategies for a particular client. This material does not constitute a solicitation or offer in any jurisdiction.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/KnowledgeCaptureAndDiscovery/autoTS">autoTS</a> is maintained by <a href="https://github.com/KnowledgeCaptureAndDiscovery">KnowledgeCaptureAndDiscovery</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
