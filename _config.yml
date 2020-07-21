@@ -1,0 +1,8 @@
+title: autoTS
+description: Automated Machine Learning for Time Series Analysis
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-midnight
+
+gems:
+  - jekyll-mentions
