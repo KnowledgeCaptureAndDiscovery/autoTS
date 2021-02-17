@@ -1,4 +1,4 @@
-#autoTS
+# autoTS
 
 ## Table of content
 * [What is autoTS?](#what)
