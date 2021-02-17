@@ -1,3 +1,5 @@
+#autoTS
+
 ## Table of content
 * [What is autoTS?](#what)
 * [Why autoTS?](#why)
