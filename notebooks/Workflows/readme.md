@@ -6,3 +6,4 @@ implemented in WINGS.
 * Spectral Workflow: describes the steps for workflow analysis, including saving in JSON format. Each cell in the notebook is meant to emulate a workflow component for WINGS [Ready to use]
 * Spectral Workflow Test: Add a cost function to spectral workflow to characterize how well the workflow is able to capture the original periodocoties [beta]
 * Wavelet workflow: workflow for wavelet analysis [in prep]
+* Wavelet workflow Test: workflow for wavelet analysis with various methods [depricated 02/14/2022]
