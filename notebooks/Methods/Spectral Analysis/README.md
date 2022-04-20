@@ -9,9 +9,10 @@ Completed work:
 * Lomb Scargle Performance on Evenly Spaced Signal.ipynb: Looks at the implementation of Lomb-Scargle in Pyleoclim with respect to WOSA implementation and use.
 * lomb_scargle_vs_wwz_analytical_benchmarks.ipynb: Evaluates the performance of the Lomb-Scargle periodogram with respect to analytical solution on specific signals.
 * Lomb-Scargle Performance_RvsPython.ipynb: Benchmarks the Lomb-Scargle algorithm as implemtented in GeochronR vs Pyleoclim
-*
+
 
 In Progress
 
 * gap_spectral: Notebook to look at the effect of gaps on the analysis.
 * run_algs.py (note: not a Notebook): runs various algorithms and test accuracy for the peaks
+* AB1 Benchmark: Testing benchmarking with AR1 from simulations and closed form solution.
